@@ -13,7 +13,7 @@ import styles2 from "../styles/index.css";
 export function links() {
   return [
     { rel: "stylesheet", href: styles },
-    { rel: "stylesheet", href: styles2 },
+    // { rel: "stylesheet", href: styles2 },
   ];
 }
 export const meta: MetaFunction = () => ({
@@ -28,6 +28,10 @@ export default function App() {
       <head>
         <Meta />
         <Links />
+        <link
+          href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;500;600;700;800;900&display=swap"
+          rel="stylesheet"
+        ></link>
       </head>
       <body className="">
         <Outlet />
