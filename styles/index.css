@@ -1,0 +1,16 @@
+@font-face {
+  font-family: "StarWars1";
+  src: url("../public/fonts/stjedise/STJEDISE.TTF");
+}
+@font-face {
+  font-family: "StarWars3";
+  src: url("../public/fonts/starjout/Starjout.ttf");
+}
+@font-face {
+  font-family: "StarWars2";
+  src: url("../public/fonts/starjedi/Starjedi.ttf");
+}
+@font-face {
+  font-family: "StarWars4";
+  src: url("../public/fonts/starjedi/Starjhol.ttf");
+}

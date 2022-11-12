@@ -20,11 +20,11 @@ export default function Index() {
   return (
     <motion.div
       style={{ fontFamily: "system-ui, sans-serif", lineHeight: "1.4" }}
-      initial={{ opacity: 0, scale: 0.5 }}
+      initial={{ opacity: 0, scale: 3 }}
       animate={{ opacity: 1, scale: 1 }}
       transition={{ duration: 0.5 }}
     >
-      <h1 className="text-3xl">Welcome to Remix</h1>
+      <h1 className="text-4xl text-pink-600">Welcome to Remix</h1>
       {/* <img src='Star_Wars_Logo.svg' /> */}
       {/* <img src='star-wars.svg' className='text-yellow-400 ' /> */}
       {/* <Player
@@ -34,7 +34,7 @@ export default function Index() {
         src={res}
         style={{ height: '300px', width: '300px' }}
       ></Player> */}
-      <ul className="font-StarWars">
+      <ul className="font-StarWars4">
         <li>
           <a
             target="_blank"

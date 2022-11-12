@@ -545,9 +545,19 @@ video {
   font-family: StarWars, cursive;
 }
 
+.text-4xl {
+  font-size: 2.25rem;
+  line-height: 2.5rem;
+}
+
 .text-3xl {
   font-size: 1.875rem;
   line-height: 2.25rem;
+}
+
+.text-pink-600 {
+  --tw-text-opacity: 1;
+  color: rgb(219 39 119 / var(--tw-text-opacity));
 }
 
 .text-yellow-400 {
@@ -567,10 +577,4 @@ video {
     backdrop-filter, -webkit-backdrop-filter;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
   transition-duration: 150ms;
-}
-
-@font-face {
-  font-family: "StarWars";
-
-  src: url("../public/fonts/stjedise/STJEDISE.ttf");
 }
