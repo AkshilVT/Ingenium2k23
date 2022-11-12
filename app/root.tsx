@@ -13,7 +13,7 @@ import styles2 from "../styles/index.css";
 export function links() {
   return [
     { rel: "stylesheet", href: styles },
-    { rel: "stylesheet", href: styles2 },
+    // { rel: "stylesheet", href: styles2 },
   ];
 }
 export const meta: MetaFunction = () => ({
