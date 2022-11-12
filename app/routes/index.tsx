@@ -65,6 +65,34 @@ export default function Index() {
         transition={{ duration: 1, delay: 1 }}
         className="relative h-screen w-screen text-center"
       >
+        <motion.div
+          initial={{ y: -100, x: 100, opacity: 0 }}
+          animate={{ y: 0, x: 0, opacity: 1 }}
+          transition={{ duration: 2 }}
+          className="absolute top-10 right-10 z-10"
+        >
+          <Player
+            autoplay
+            loop
+            className="rotate-45"
+            src="https://assets8.lottiefiles.com/private_files/lf30_gvdwzaoj.json"
+            style={{ height: "300px", width: "300px" }}
+          ></Player>
+        </motion.div>
+        <motion.div
+          initial={{ y: -100, x: 100, opacity: 0 }}
+          animate={{ y: 0, x: 0, opacity: 1 }}
+          transition={{ duration: 2 }}
+          className="absolute -top-36 left-10"
+        >
+          <Player
+            autoplay
+            loop
+            className="rotate-90"
+            src="https://assets9.lottiefiles.com/private_files/lf30_nb0dznaf.json"
+            style={{ height: "300px", width: "300px" }}
+          ></Player>
+        </motion.div>
         <div className="absolute w-full flex flex-col items-center justify-center top-5 space-y-7">
           <p className="text-6xl">Glimpse of TechFest!</p>
           <video autoPlay muted loop className="w-11/12">
