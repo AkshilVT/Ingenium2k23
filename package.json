@@ -10,6 +10,7 @@
     "format": "prettier --write \"**/*.{ts,tsx,json,css,md}\""
   },
   "dependencies": {
+    "@lottiefiles/react-lottie-player": "^3.4.7",
     "@netlify/functions": "^1.0.0",
     "@remix-run/netlify": "^1.7.5",
     "@remix-run/node": "^1.7.5",

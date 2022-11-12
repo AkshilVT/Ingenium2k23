@@ -1,5 +1,22 @@
+import { Player } from "@lottiefiles/react-lottie-player";
+import { useLoaderData } from "@remix-run/react";
 import { motion } from "framer-motion";
+import { useEffect } from "react";
+
+async function getLoader() {
+  const resp = await fetch(
+    "https://assets3.lottiefiles.com/packages/lf20_XZ3pkn.json"
+  );
+  // console.log(resp);
+  return resp;
+}
+
+export async function loader() {
+  return await getLoader();
+}
 export default function Index() {
+  const res = useLoaderData();
+
   return (
     <motion.div
       style={{ fontFamily: "system-ui, sans-serif", lineHeight: "1.4" }}
@@ -8,7 +25,16 @@ export default function Index() {
       transition={{ duration: 0.5 }}
     >
       <h1 className="text-3xl">Welcome to Remix</h1>
-      <ul>
+      {/* <img src='Star_Wars_Logo.svg' /> */}
+      {/* <img src='star-wars.svg' className='text-yellow-400 ' /> */}
+      {/* <Player
+        autoplay={true}
+        loop={true}
+        controls={true}
+        src={res}
+        style={{ height: '300px', width: '300px' }}
+      ></Player> */}
+      <ul className="font-StarWars">
         <li>
           <a
             target="_blank"

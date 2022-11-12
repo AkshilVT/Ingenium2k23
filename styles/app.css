@@ -1,3 +1,8 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@font-face {
+  font-family: "StarWars";
+  src: url("../public/fonts/stjedise/STJEDISE.ttf");
+}
