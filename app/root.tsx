@@ -19,11 +19,7 @@ export function links() {
   return [
     { rel: 'stylesheet', href: styles },
     { rel: 'stylesheet', href: dotringcss },
-<<<<<<< HEAD
-
-=======
 {rel:'stylesheet',href:events},
->>>>>>> 3ff503d076637caf23bb32be3a7fa4757f62f7c6
     { rel: 'stylesheet', href: register },
     // { rel: "stylesheet", href: styles2 },
   ];

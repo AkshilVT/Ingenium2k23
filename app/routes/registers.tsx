@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from "react";
 import Section1 from "components/section1";
 
-const register = () => {
+const Register = () => {
   const [section, setSection] = useState("part1");
   return (
     <div className="padding hello">
@@ -63,4 +63,4 @@ const register = () => {
   );
 };
 
-export default register;
+export default Register;

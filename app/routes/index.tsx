@@ -62,7 +62,7 @@ export default function Index() {
             loop
             className="absolute bottom-0 inset-x-0"
             src="https://lottie.host/8b269248-2f24-46ae-a1f7-65ada6ce262d/BtfeV6hkGc.json"
-            style={{ height: "300px", width: "300px" }}
+            style={{ height: "200px", width: "200px" }}
           ></Player>
         </motion.div>
       </AnimatePresence>
