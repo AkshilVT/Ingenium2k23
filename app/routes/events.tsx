@@ -1,4 +1,5 @@
 import React from "react";
+import styles from "./styles/events.css";
 
 function events() {
   const arr = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
@@ -9,13 +10,18 @@ function events() {
         {arr.map((item) => (
           <div className="bg-[#85d8e4] rounded-xl m-2 " key={item}>
             <div className="m-6 min-w-[300px] aspect-square">
-              <img src="https://picsum.photos/200/300" alt="" className="w-[100%] h-[100%] rounded-xl"/>
+              <img
+                src="https://picsum.photos/200/300"
+                alt=""
+                className="w-[100%] h-[100%] rounded-xl"
+              />
               <h3>Event {item}</h3>
             </div>
           </div>
         ))}
       </div>
-    </div>);
+    </div>
+  );
 }
 
 export default events;
