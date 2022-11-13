@@ -19,6 +19,16 @@ function events() {
                       <a className="flex justify-center py-2">Read more</a>
                     </div>
                     
+                    <h1 className="title text-3xl font-[200] py-2">
+                      <a href="#">
+                        Stranger Things: The sound of the Upside Down
+                      </a>
+                    </h1>
+                    <p className="text font-light py-2">
+                      The antsy bingers of Netflix will eagerly anticipate the
+                      digital release of the Survive soundtrack, out today.
+                    </p>
+                    <a className="flex justify-center py-2">Read more</a>
                   </div>
                 </div>
               </div>

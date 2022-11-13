@@ -21,8 +21,8 @@ const section1 = () => {
           />
         </div>
       </div>
-        <div className="flex justify-center">
-      {/* <div className=""> */}
+      <div className="flex justify-center">
+        {/* <div className=""> */}
         <p className="-mb-0.5 text-sm">Email</p>
         <input
           type="email"
