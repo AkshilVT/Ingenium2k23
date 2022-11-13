@@ -1,5 +1,5 @@
 node_modules
-
+.netlify.zip
 /.cache
 /public/build
 /.netlify
