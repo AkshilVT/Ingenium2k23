@@ -586,10 +586,6 @@ video {
   z-index: 10;
 }
 
-.m-2 {
-  margin: 0.5rem;
-}
-
 .m-6 {
   margin: 1.5rem;
 }
@@ -597,6 +593,11 @@ video {
 .my-20 {
   margin-top: 5rem;
   margin-bottom: 5rem;
+}
+
+.my-0 {
+  margin-top: 0px;
+  margin-bottom: 0px;
 }
 
 .mx-auto {
@@ -609,16 +610,16 @@ video {
   margin-bottom: 1.5rem;
 }
 
+.\!mt-5 {
+  margin-top: 1.25rem !important;
+}
+
 .-mb-0\.5 {
   margin-bottom: -0.125rem;
 }
 
 .-mb-0 {
   margin-bottom: -0px;
-}
-
-.\!mt-5 {
-  margin-top: 1.25rem !important;
 }
 
 .flex {
@@ -629,8 +630,8 @@ video {
   display: grid;
 }
 
-.aspect-square {
-  aspect-ratio: 1 / 1;
+.aspect-\[9\/11\] {
+  aspect-ratio: 9/11;
 }
 
 .h-\[100\%\] {
@@ -685,12 +686,20 @@ video {
   width: 50%;
 }
 
+.w-\[7\.5rem\] {
+  width: 7.5rem;
+}
+
 .w-32 {
   width: 8rem;
 }
 
 .min-w-\[300px\] {
   min-width: 300px;
+}
+
+.max-w-\[1200px\] {
+  max-width: 1200px;
 }
 
 .max-w-4xl {
@@ -761,6 +770,12 @@ video {
   margin-bottom: calc(0.25rem * var(--tw-space-y-reverse));
 }
 
+.space-x-4 > :not([hidden]) ~ :not([hidden]) {
+  --tw-space-x-reverse: 0;
+  margin-right: calc(1rem * var(--tw-space-x-reverse));
+  margin-left: calc(1rem * calc(1 - var(--tw-space-x-reverse)));
+}
+
 .space-x-2 > :not([hidden]) ~ :not([hidden]) {
   --tw-space-x-reverse: 0;
   margin-right: calc(0.5rem * var(--tw-space-x-reverse));
@@ -805,11 +820,6 @@ video {
   border-color: rgb(188 188 188 / var(--tw-border-opacity));
 }
 
-.bg-\[\#85d8e4\] {
-  --tw-bg-opacity: 1;
-  background-color: rgb(133 216 228 / var(--tw-bg-opacity));
-}
-
 .bg-black {
   --tw-bg-opacity: 1;
   background-color: rgb(0 0 0 / var(--tw-bg-opacity));
@@ -818,6 +828,15 @@ video {
 .bg-\[\#121212\] {
   --tw-bg-opacity: 1;
   background-color: rgb(18 18 18 / var(--tw-bg-opacity));
+}
+
+.\!bg-white {
+  --tw-bg-opacity: 1 !important;
+  background-color: rgb(255 255 255 / var(--tw-bg-opacity)) !important;
+}
+
+.bg-\[url\(\'https\:\/\/tvseriescritic\.files\.wordpress\.com\/2016\/10\/stranger-things-bicycle-lights-children\.jpg\'\)\] {
+  background-image: url('https://tvseriescritic.files.wordpress.com/2016/10/stranger-things-bicycle-lights-children.jpg');
 }
 
 .bg-gradient-to-tr {
@@ -854,8 +873,25 @@ video {
   --tw-gradient-to: #06b6d4;
 }
 
+.bg-cover {
+  background-size: cover;
+}
+
+.bg-center {
+  background-position: center;
+}
+
+.p-3 {
+  padding: 0.75rem;
+}
+
 .p-10 {
   padding: 2.5rem;
+}
+
+.py-2 {
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
 }
 
 .text-center {
@@ -867,19 +903,27 @@ video {
   line-height: 2rem;
 }
 
-.text-6xl {
-  font-size: 3.75rem;
-  line-height: 1;
-}
-
 .text-3xl {
   font-size: 1.875rem;
   line-height: 2.25rem;
 }
 
+.text-6xl {
+  font-size: 3.75rem;
+  line-height: 1;
+}
+
 .text-sm {
   font-size: 0.875rem;
   line-height: 1.25rem;
+}
+
+.font-\[200\] {
+  font-weight: 200;
+}
+
+.font-light {
+  font-weight: 300;
 }
 
 .font-semibold {
@@ -927,7 +971,7 @@ video {
 body {
   font-family: "Orbitron", sans-serif;
   overflow-x: hidden;
-  cursor: none;
+  /* cursor: none; */
 }
 
 @media (min-width: 768px) {

@@ -2,7 +2,7 @@ import React from "react";
 
 const section1 = () => {
   return (
-    <div className="">
+    <div className="!bg-white">
       <div className="flex space-x-4">
         <div className="w-1/2">
           <p className="-mb-0.5 text-sm">First Name</p>
@@ -12,7 +12,7 @@ const section1 = () => {
             placeholder="First Name"
           />
         </div>
-        <div>
+        <div className="flex justify-center">
           <p className="-mb-0.5 text-sm">Last Name</p>
           <input
             type="text"
@@ -21,7 +21,8 @@ const section1 = () => {
           />
         </div>
       </div>
-      <div>
+        <div className="flex justify-center">
+      {/* <div className=""> */}
         <p className="-mb-0.5 text-sm">Email</p>
         <input
           type="email"
@@ -45,8 +46,6 @@ const section1 = () => {
           placeholder="Number"
         />
       </div>
-
-      
     </div>
   );
 };
