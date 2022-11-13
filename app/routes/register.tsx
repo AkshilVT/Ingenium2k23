@@ -1,11 +1,10 @@
 import React, { useState, useEffect } from "react";
 import Section1 from "components/section1";
 
-const registers = () => {
+const register = () => {
   const [section, setSection] = useState("part1");
-
   return (
-    <div className="padding hello">
+    <div className="padding">
       <div className="flex flex-wrap h-full bg-[#121212] text-[#EEEEEE] rounded-2xl shadow-xl p-10 min-h-[40rem]">
         <div className="w-full md:w-1/2 flex flex-col justify-center items-center md:border-r-2">
           Bxx
@@ -32,7 +31,7 @@ const registers = () => {
               </div>
               <div className="flex space-x-2">
                 <div className="w-1/2">
-                  <p className="-mb-0.5 text-sm">Branch</p>
+                  <p className="-mb-0.5 text-sm branch" id="branch">Branch</p>
                   <input
                     type="text"
                     className="input w-32 bg-[#121212] rounded-lg border-2 border-[#BCBCBC]"
@@ -64,4 +63,4 @@ const registers = () => {
   );
 };
 
-export default registers;
+export default register;
