@@ -8,7 +8,7 @@ import {
   ScrollRestoration,
 } from '@remix-run/react';
 import styles from './styles/app.css';
-import styles2 from '../styles/index.css';
+// import styles2 from '../styles/index.css';
 import dotringcss from '../components/DotRing/DotRing.css';
 import MouseContextProvider from 'context/mouse-context';
 import registers from './styles/register.css';
