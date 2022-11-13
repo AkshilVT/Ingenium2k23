@@ -14,8 +14,15 @@ function events() {
                 <div className="data text-white p-3">
                   <div className="content">
                     <span className="author">Jane Doe</span>
-                    <h1 className="title text-3xl font-[200] py-2"><a href="#">Stranger Things: The sound of the Upside Down</a></h1>
-                    <p className="text font-light py-2">The antsy bingers of Netflix will eagerly anticipate the digital release of the Survive soundtrack, out today.</p>
+                    <h1 className="title text-3xl font-[200] py-2">
+                      <a href="#">
+                        Stranger Things: The sound of the Upside Down
+                      </a>
+                    </h1>
+                    <p className="text font-light py-2">
+                      The antsy bingers of Netflix will eagerly anticipate the
+                      digital release of the Survive soundtrack, out today.
+                    </p>
                     <a className="flex justify-center py-2">Read more</a>
                   </div>
                 </div>

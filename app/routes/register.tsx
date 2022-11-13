@@ -20,57 +20,57 @@ const Register = () => {
           {section === "part1" ? (
             // <Section1 />
             <div className="bg-none">
-      <div className="flex space-x-4">
-        <div className="">
-          <p className="-mb-0.5 text-sm">First Name</p>
-          <input
-            type="text"
-            className="input w-[7.5rem] bg-[#121212] rounded-lg border-2 border-[#BCBCBC]"
-            placeholder="First Name"
-          />
-        </div>
-        <div className="">
-          <p className="-mb-0.5 text-sm">Last Name</p>
-          <input
-            type="text"
-            className="input w-[7.5rem] bg-[#121212] rounded-lg border-2 border-[#BCBCBC]"
-            placeholder="Last Name"
-          />
-        </div>
-      </div>
-        <div className="">
-        <p className="-mb-0.5 text-sm">Email</p>
-        <input
-          type="email"
-          className="input w-64 bg-[#121212] rounded-lg border-2 border-[#BCBCBC]"
-          placeholder="Email"
-        />
-      </div>
-      <div>
-        <p className="-mb-0.5 text-sm">Password</p>
-        <input
-          type="text"
-          className="input w-64 bg-[#121212] rounded-lg border-2 border-[#BCBCBC]"
-          placeholder="Password"
-        />
-      </div>
-      <div>
-        <p className="-mb-0.5 text-sm">Number</p>
-        <input
-          type="text"
-          className="input w-64 bg-[#121212] rounded-lg border-2 border-[#BCBCBC]"
-          placeholder="Number"
-        />
-      </div>
-      <div className="w-64 flex justify-end !mt-5">
-            <button
-              className="custom-btn btn-15 !text-black"
-              onClick={() => setSection("part2")}
-            >
-              Next
-            </button>
-          </div>
-    </div>
+              <div className="flex space-x-4">
+                <div className="">
+                  <p className="-mb-0.5 text-sm">First Name</p>
+                  <input
+                    type="text"
+                    className="input w-[7.5rem] bg-[#121212] rounded-lg border-2 border-[#BCBCBC]"
+                    placeholder="First Name"
+                  />
+                </div>
+                <div className="">
+                  <p className="-mb-0.5 text-sm">Last Name</p>
+                  <input
+                    type="text"
+                    className="input w-[7.5rem] bg-[#121212] rounded-lg border-2 border-[#BCBCBC]"
+                    placeholder="Last Name"
+                  />
+                </div>
+              </div>
+              <div className="">
+                <p className="-mb-0.5 text-sm">Email</p>
+                <input
+                  type="email"
+                  className="input w-64 bg-[#121212] rounded-lg border-2 border-[#BCBCBC]"
+                  placeholder="Email"
+                />
+              </div>
+              <div>
+                <p className="-mb-0.5 text-sm">Password</p>
+                <input
+                  type="text"
+                  className="input w-64 bg-[#121212] rounded-lg border-2 border-[#BCBCBC]"
+                  placeholder="Password"
+                />
+              </div>
+              <div>
+                <p className="-mb-0.5 text-sm">Number</p>
+                <input
+                  type="text"
+                  className="input w-64 bg-[#121212] rounded-lg border-2 border-[#BCBCBC]"
+                  placeholder="Number"
+                />
+              </div>
+              <div className="w-64 flex justify-end !mt-5">
+                <button
+                  className="custom-btn btn-15 !text-black"
+                  onClick={() => setSection("part2")}
+                >
+                  Next
+                </button>
+              </div>
+            </div>
           ) : (
             <div>
               <div>
@@ -83,7 +83,9 @@ const Register = () => {
               </div>
               <div className="flex space-x-2">
                 <div className="w-1/2">
-                  <p className="-mb-0.5 text-sm branch" id="branch">Branch</p>
+                  <p className="-mb-0.5 text-sm branch" id="branch">
+                    Branch
+                  </p>
                   <input
                     type="text"
                     className="input w-32 bg-[#121212] rounded-lg border-2 border-[#BCBCBC]"
@@ -99,26 +101,25 @@ const Register = () => {
                   />
                 </div>
               </div>
-              <div className="flex justify-between" >
-              <div className="start !mt-5">
-            <button
-              className="!w-auto custom-btn btn-15 !text-black"
-              onClick={() => setSection("part1")}
-            >
-              Previous
-            </button>
+              <div className="flex justify-between">
+                <div className="start !mt-5">
+                  <button
+                    className="!w-auto custom-btn btn-15 !text-black"
+                    onClick={() => setSection("part1")}
+                  >
+                    Previous
+                  </button>
                 </div>
-              <div className="!mt-5">
-            <button
-              className="!w-auto custom-btn btn-15 absolute !text-black"
-              onClick={() => setSection("part2")}
-            >
-              Apply
-            </button>
-          </div>
-          </div>
+                <div className="!mt-5">
+                  <button
+                    className="!w-auto custom-btn btn-15 absolute !text-black"
+                    onClick={() => setSection("part2")}
+                  >
+                    Apply
+                  </button>
+                </div>
+              </div>
             </div>
-            
           )}
           {/* <div className="w-64 flex justify-end !mt-5">
             <button
