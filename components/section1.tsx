@@ -2,7 +2,7 @@ import React from "react";
 
 const section1 = () => {
   return (
-    <div>
+    <div className="">
       <div className="flex space-x-4">
         <div className="w-1/2">
           <p className="-mb-0.5 text-sm">First Name</p>

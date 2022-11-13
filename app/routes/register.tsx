@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from "react";
 import Section1 from "components/section1";
+import Section2 from "components/section2";
 
 const register = () => {
   const [section, setSection] = useState("part1");
@@ -20,34 +21,7 @@ const register = () => {
           {section === "part1" ? (
             <Section1 />
           ) : (
-            <div>
-              <div>
-                <p className="-mb-0.5 text-sm">Collage</p>
-                <input
-                  type="text"
-                  className="input w-64 bg-[#121212] rounded-lg border-2 border-[#BCBCBC]"
-                  placeholder="Collage"
-                />
-              </div>
-              <div className="flex space-x-2">
-                <div className="w-1/2">
-                  <p className="-mb-0.5 text-sm branch" id="branch">Branch</p>
-                  <input
-                    type="text"
-                    className="input w-32 bg-[#121212] rounded-lg border-2 border-[#BCBCBC]"
-                    placeholder="Branch"
-                  />
-                </div>
-                <div>
-                  <p className="-mb-0.5 text-sm">Year</p>
-                  <input
-                    type="text"
-                    className="input w-32 bg-[#121212] rounded-lg border-2 border-[#BCBCBC]"
-                    placeholder="Year"
-                  />
-                </div>
-              </div>
-            </div>
+            <Section2 />
           )}
           <div className="w-64 flex justify-end !mt-5">
             <button
