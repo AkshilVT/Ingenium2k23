@@ -17,17 +17,10 @@ import events from "./../styles/events.css";
 
 export function links() {
   return [
-<<<<<<< HEAD
-    { rel: 'stylesheet', href: styles },
-    { rel: 'stylesheet', href: dotringcss },
-{rel:'stylesheet',href:events},
-    { rel: 'stylesheet', href: register },
-=======
     { rel: "stylesheet", href: styles },
     { rel: "stylesheet", href: dotringcss },
     { rel: "stylesheet", href: events },
     { rel: "stylesheet", href: register },
->>>>>>> 05a8f4a3b8cdbdccbe75189a4017621009b89eb5
     // { rel: "stylesheet", href: styles2 },
   ];
 }
