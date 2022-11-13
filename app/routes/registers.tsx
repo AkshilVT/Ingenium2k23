@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from "react";
-import Section1 from "~/components/section1";
+import Section1 from "components/section1";
 
 const registers = () => {
   const [section, setSection] = useState("part1");

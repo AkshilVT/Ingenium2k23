@@ -11,7 +11,8 @@ import styles from './styles/app.css';
 // import styles2 from '../styles/index.css';
 import dotringcss from '../components/DotRing/DotRing.css';
 import MouseContextProvider from 'context/mouse-context';
-import registers from './styles/register.css';
+import registers from './../styles/registers.css';
+import events from './../styles/events.css';
 // import styles2 from "../styles/index.css";
 
 export function links() {
