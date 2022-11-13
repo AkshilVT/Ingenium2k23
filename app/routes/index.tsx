@@ -25,13 +25,13 @@ export default function Index() {
       <motion.div
         className="w-40 h-96 rotate-45 blur-xl opacity-40 rounded-full fixed top-60 right-20 bg-gradient-to-tr from-purple-500 to-blue-500"
         initial={{ x: -120, y: 100 }}
-        animate={{ x: 40, rotate: 100, y: 0 }}
+        animate={{ x: 40, rotate: 100, y: -100 }}
         transition={{ duration: 3, repeat: Infinity, repeatType: "reverse" }}
       />
       <motion.div
         className="w-40 h-40 blur-xl rounded-md fixed bottom-60 left-20 bg-gradient-to-tr from-red-500 to-yellow-500"
-        initial={{ x: 0, y: 30 }}
-        animate={{ x: 40, rotate: 360, y: 140 }}
+        initial={{ x: -200, y: -50 }}
+        animate={{ x: 200, rotate: 360, y: 180 }}
         transition={{ duration: 5, repeat: Infinity, repeatType: "reverse" }}
       />
       <motion.div

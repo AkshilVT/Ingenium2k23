@@ -1,4 +1,4 @@
-.hello{
-    @apply bg-green-300;
-    background-color: aquamarine;
+.hello {
+  @apply bg-green-300;
+  background-color: aquamarine;
 }
