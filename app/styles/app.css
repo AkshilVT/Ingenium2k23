@@ -560,6 +560,10 @@ video {
   left: 0px;
 }
 
+.bottom-0 {
+  bottom: 0px;
+}
+
 .top-10 {
   top: 2.5rem;
 }
@@ -568,36 +572,16 @@ video {
   right: 2.5rem;
 }
 
-.bottom-0 {
-  bottom: 0px;
-}
-
-.top-5 {
-  top: 1.25rem;
-}
-
-.bottom-10 {
-  bottom: 2.5rem;
-}
-
-.-top-5 {
-  top: -1.25rem;
+.-top-36 {
+  top: -9rem;
 }
 
 .left-10 {
   left: 2.5rem;
 }
 
-.-top-20 {
-  top: -5rem;
-}
-
-.-top-36 {
-  top: -9rem;
-}
-
-.z-50 {
-  z-index: 50;
+.top-5 {
+  top: 1.25rem;
 }
 
 .z-10 {
@@ -839,6 +823,7 @@ video {
 body {
   font-family: "Orbitron", sans-serif;
   overflow-x: hidden;
+  cursor: none;
 }
 
 @media (min-width: 768px) {

@@ -9,10 +9,13 @@ import {
 } from "@remix-run/react";
 import styles from "./styles/app.css";
 import styles2 from "../styles/index.css";
+import dotringcss from "../components/DotRing/DotRing.css";
+import MouseContextProvider from "context/mouse-context";
 
 export function links() {
   return [
     { rel: "stylesheet", href: styles },
+    { rel: "stylesheet", href: dotringcss },
     // { rel: "stylesheet", href: styles2 },
   ];
 }
@@ -34,10 +37,12 @@ export default function App() {
         ></link>
       </head>
       <body className="">
-        <Outlet />
-        <ScrollRestoration />
-        <Scripts />
-        <LiveReload />
+        <MouseContextProvider>
+          <Outlet />
+          <ScrollRestoration />
+          <Scripts />
+          <LiveReload />
+        </MouseContextProvider>
       </body>
     </html>
   );
