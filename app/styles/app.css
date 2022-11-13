@@ -590,10 +590,6 @@ video {
   margin: 1.5rem;
 }
 
-.m-2 {
-  margin: 0.5rem;
-}
-
 .my-20 {
   margin-top: 5rem;
   margin-bottom: 5rem;
@@ -634,12 +630,8 @@ video {
   display: grid;
 }
 
-.aspect-\[9\/11\] {
-  aspect-ratio: 9/11;
-}
-
-.aspect-square {
-  aspect-ratio: 1 / 1;
+.aspect-\[5\/3\] {
+  aspect-ratio: 5/3;
 }
 
 .h-\[100\%\] {
@@ -686,6 +678,10 @@ video {
   width: 91.666667%;
 }
 
+.w-\[7\.5rem\] {
+  width: 7.5rem;
+}
+
 .w-64 {
   width: 16rem;
 }
@@ -698,12 +694,16 @@ video {
   width: 8rem;
 }
 
-.min-w-\[300px\] {
-  min-width: 300px;
+.\!w-auto {
+  width: auto !important;
 }
 
 .max-w-\[1200px\] {
   max-width: 1200px;
+}
+
+.max-w-\[300px\] {
+  max-width: 300px;
 }
 
 .max-w-4xl {
@@ -744,6 +744,10 @@ video {
   justify-content: center;
 }
 
+.justify-between {
+  justify-content: space-between;
+}
+
 .justify-items-center {
   justify-items: center;
 }
@@ -774,10 +778,20 @@ video {
   margin-bottom: calc(0.25rem * var(--tw-space-y-reverse));
 }
 
+.space-x-4 > :not([hidden]) ~ :not([hidden]) {
+  --tw-space-x-reverse: 0;
+  margin-right: calc(1rem * var(--tw-space-x-reverse));
+  margin-left: calc(1rem * calc(1 - var(--tw-space-x-reverse)));
+}
+
 .space-x-2 > :not([hidden]) ~ :not([hidden]) {
   --tw-space-x-reverse: 0;
   margin-right: calc(0.5rem * var(--tw-space-x-reverse));
   margin-left: calc(0.5rem * calc(1 - var(--tw-space-x-reverse)));
+}
+
+.place-self-end {
+  place-self: end;
 }
 
 .rounded-xl {
@@ -818,14 +832,14 @@ video {
   border-color: rgb(188 188 188 / var(--tw-border-opacity));
 }
 
-.bg-\[\#85d8e4\] {
-  --tw-bg-opacity: 1;
-  background-color: rgb(133 216 228 / var(--tw-bg-opacity));
-}
-
 .bg-black {
   --tw-bg-opacity: 1;
   background-color: rgb(0 0 0 / var(--tw-bg-opacity));
+}
+
+.bg-\[\#b35555\] {
+  --tw-bg-opacity: 1;
+  background-color: rgb(179 85 85 / var(--tw-bg-opacity));
 }
 
 .bg-\[\#121212\] {
@@ -839,6 +853,10 @@ video {
 
 .bg-gradient-to-tr {
   background-image: linear-gradient(to top right, var(--tw-gradient-stops));
+}
+
+.bg-none {
+  background-image: none;
 }
 
 .from-purple-500 {
@@ -969,7 +987,7 @@ video {
 body {
   font-family: "Orbitron", sans-serif;
   overflow-x: hidden;
-  cursor: none;
+  /* cursor: none; */
 }
 
 @media (min-width: 768px) {
