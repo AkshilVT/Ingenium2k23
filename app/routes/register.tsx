@@ -1,9 +1,7 @@
 import React, { useState, useEffect } from "react";
-import Section1 from "components/section1";
-import Section2 from "components/section2";
 
 const register = () => {
-  const [section, setSection] = useState("part1");
+  const [section, setSection] = useState(true);
   return (
     <div className="padding">
       <div className="flex flex-wrap h-full bg-[#121212] text-[#EEEEEE] rounded-2xl shadow-xl p-10 min-h-[40rem]">
@@ -18,7 +16,7 @@ const register = () => {
             </p>
           </div>
           <br className="breaker" />
-          {section === "part1" ? (
+          {section === true ? (
             <div className="">
               <div className="flex space-x-4">
                 <div className="w-1/2">
@@ -62,15 +60,23 @@ const register = () => {
                   placeholder="Number"
                 />
               </div>
+              <div className="w-64 flex justify-end !mt-5">
+                <button
+                  className="custom-btn btn-15 !text-black"
+                  onClick={() => setSection(!section)}
+                >
+                  Next
+                </button>
+              </div>
             </div>
           ) : (
             <div>
               <div>
-                <p className="-mb-0.5 text-sm">Collage</p>
+                <p className="-mb-0.5 text-sm">College</p>
                 <input
                   type="text"
                   className="input w-64 bg-[#121212] rounded-lg border-2 border-[#BCBCBC]"
-                  placeholder="Collage"
+                  placeholder="College"
                 />
               </div>
               <div className="flex space-x-2">
@@ -93,16 +99,22 @@ const register = () => {
                   />
                 </div>
               </div>
+              <div className="w-64 flex justify-between !mt-5">
+                <button
+                  className="custom-btn btn-15 !text-black !w-fit"
+                  onClick={() => setSection(!section)}
+                >
+                  Previous
+                </button>
+                <button
+                  className="custom-btn btn-15 !text-black !w-fit"
+                  onClick={() => setSection(!section)}
+                >
+                  Submit
+                </button>
+              </div>
             </div>
           )}
-          <div className="w-64 flex justify-end !mt-5">
-            <button
-              className="custom-btn btn-15 !text-black"
-              onClick={() => setSection("part2")}
-            >
-              Next
-            </button>
-          </div>
         </div>
       </div>
     </div>

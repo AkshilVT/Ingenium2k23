@@ -610,10 +610,6 @@ video {
   margin-bottom: 1.5rem;
 }
 
-.\!mt-5 {
-  margin-top: 1.25rem !important;
-}
-
 .-mb-0\.5 {
   margin-bottom: -0.125rem;
 }
@@ -622,16 +618,16 @@ video {
   margin-bottom: -0px;
 }
 
+.\!mt-5 {
+  margin-top: 1.25rem !important;
+}
+
 .flex {
   display: flex;
 }
 
 .grid {
   display: grid;
-}
-
-.aspect-\[9\/11\] {
-  aspect-ratio: 9/11;
 }
 
 .aspect-\[5\/3\] {
@@ -682,10 +678,6 @@ video {
   width: 91.666667%;
 }
 
-.w-64 {
-  width: 16rem;
-}
-
 .w-1\/2 {
   width: 50%;
 }
@@ -694,24 +686,29 @@ video {
   width: 7.5rem;
 }
 
+.w-64 {
+  width: 16rem;
+}
+
 .w-32 {
   width: 8rem;
 }
 
-.min-w-\[300px\] {
-  min-width: 300px;
+.\!w-fit {
+  width: -moz-fit-content !important;
+  width: fit-content !important;
 }
 
 .max-w-\[1200px\] {
   max-width: 1200px;
 }
 
-.max-w-4xl {
-  max-width: 56rem;
-}
-
 .max-w-\[300px\] {
   max-width: 300px;
+}
+
+.max-w-4xl {
+  max-width: 56rem;
 }
 
 .rotate-45 {
@@ -746,6 +743,10 @@ video {
 
 .justify-center {
   justify-content: center;
+}
+
+.justify-between {
+  justify-content: space-between;
 }
 
 .justify-items-center {
@@ -840,11 +841,6 @@ video {
 .bg-\[\#121212\] {
   --tw-bg-opacity: 1;
   background-color: rgb(18 18 18 / var(--tw-bg-opacity));
-}
-
-.\!bg-white {
-  --tw-bg-opacity: 1 !important;
-  background-color: rgb(255 255 255 / var(--tw-bg-opacity)) !important;
 }
 
 .bg-\[url\(\'https\:\/\/tvseriescritic\.files\.wordpress\.com\/2016\/10\/stranger-things-bicycle-lights-children\.jpg\'\)\] {
