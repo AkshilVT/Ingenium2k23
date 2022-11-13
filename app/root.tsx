@@ -11,7 +11,7 @@ import styles from './styles/app.css';
 // import styles2 from '../styles/index.css';
 import dotringcss from '../components/DotRing/DotRing.css';
 import MouseContextProvider from 'context/mouse-context';
-import registers from './../styles/registers.css';
+import register from './../styles/register.css';
 import events from './../styles/events.css';
 // import styles2 from "../styles/index.css";
 
@@ -19,8 +19,8 @@ export function links() {
   return [
     { rel: 'stylesheet', href: styles },
     { rel: 'stylesheet', href: dotringcss },
-
-    { rel: 'stylesheet', href: registers },
+{rel:'stylesheet',href:events},
+    { rel: 'stylesheet', href: register },
     // { rel: "stylesheet", href: styles2 },
   ];
 }
@@ -42,12 +42,12 @@ export default function App() {
         ></link>
       </head>
       <body className=''>
-        <MouseContextProvider>
+        {/* <MouseContextProvider> */}
           <Outlet />
           <ScrollRestoration />
           <Scripts />
           <LiveReload />
-        </MouseContextProvider>
+        {/* </MouseContextProvider> */}
       </body>
     </html>
   );

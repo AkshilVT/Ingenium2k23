@@ -2,7 +2,6 @@ import { Player } from "@lottiefiles/react-lottie-player";
 import { useLoaderData } from "@remix-run/react";
 import DotRing from "components/DotRing/DotRing";
 import { AnimatePresence, motion } from "framer-motion";
-import MouseContextProvider from "context/mouse-context";
 import { MouseContext } from "../../context/mouse-context";
 import { useContext } from "react";
 async function getLoader() {
@@ -19,7 +18,7 @@ export async function loader() {
 export default function Index() {
   const res = useLoaderData();
 
-  const { cursorType, cursorChangeHandler } = useContext(MouseContext);
+  // const { cursorType, cursorChangeHandler } = useContext(MouseContext);
   return (
     <main className="bg-black text-white w-screen">
       <DotRing />
@@ -49,14 +48,14 @@ export default function Index() {
           exit={{ opacity: 0, scale: 3 }}
           transition={{ duration: 1, delay: 1 }}
         >
-          <div
+          {/* <div
             // @ts-ignore
             onMouseEnter={() => cursorChangeHandler("hovered")}
             // @ts-ignore
             onMouseLeave={() => cursorChangeHandler("")}
           >
             <h1>Hover over me</h1>
-          </div>
+          </div> */}
           <img src="/image 2.1.png" alt="ingenium logo" />
           <Player
             autoplay
