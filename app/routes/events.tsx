@@ -22,6 +22,7 @@ function events() {
                 </div>
               </div>
             </div>
+          </div>
         ))}
       </div>
     </div>

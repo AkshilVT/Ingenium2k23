@@ -1,68 +1,68 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState, useEffect } from "react";
 
 const register = () => {
   const [section, setSection] = useState(true);
   return (
-    <div className='padding'>
-      <div className='flex flex-wrap h-full bg-[#121212] text-[#EEEEEE] rounded-2xl shadow-xl p-10 min-h-[40rem]'>
-        <div className='w-full md:w-1/2 flex flex-col justify-center items-center md:border-r-2'>
+    <div className="padding">
+      <div className="flex flex-wrap h-full bg-[#121212] text-[#EEEEEE] rounded-2xl shadow-xl p-10 min-h-[40rem]">
+        <div className="w-full md:w-1/2 flex flex-col justify-center items-center md:border-r-2">
           Bxx
         </div>
-        <div className='w-full md:w-1/2 space-y-1.5 flex flex-col justify-center items-center p-10'>
-          <div className='flex flex-col justify-center border-[#454545]'>
-            <h1 className='text-3xl font-semibold'>Welcome to Ingenium</h1>
-            <p className='text-sm flex justify-center'>
+        <div className="w-full md:w-1/2 space-y-1.5 flex flex-col justify-center items-center p-10">
+          <div className="flex flex-col justify-center border-[#454545]">
+            <h1 className="text-3xl font-semibold">Welcome to Ingenium</h1>
+            <p className="text-sm flex justify-center">
               Please fill in the form to create an account
             </p>
           </div>
-          <br className='breaker' />
+          <br className="breaker" />
           {section === true ? (
-            <div className=''>
-              <div className='flex space-x-4'>
-                <div className='w-1/2'>
-                  <p className='-mb-0.5 text-sm'>First Name</p>
+            <div className="">
+              <div className="flex space-x-4">
+                <div className="w-1/2">
+                  <p className="-mb-0.5 text-sm">First Name</p>
                   <input
-                    type='text'
-                    className='input w-[7.5rem] bg-[#271717] rounded-lg border-2 border-[#BCBCBC]'
-                    placeholder='First Name'
+                    type="text"
+                    className="input w-[7.5rem] bg-[#271717] rounded-lg border-2 border-[#BCBCBC]"
+                    placeholder="First Name"
                   />
                 </div>
-                <div className='w-1/2'>
-                  <p className='-mb-0.5 text-sm'>Last Name</p>
+                <div className="w-1/2">
+                  <p className="-mb-0.5 text-sm">Last Name</p>
                   <input
-                    type='text'
-                    className='input w-[7.5rem] bg-[#121212] rounded-lg border-2 border-[#BCBCBC]'
-                    placeholder='Last Name'
+                    type="text"
+                    className="input w-[7.5rem] bg-[#121212] rounded-lg border-2 border-[#BCBCBC]"
+                    placeholder="Last Name"
                   />
                 </div>
               </div>
               <div>
-                <p className='-mb-0.5 text-sm'>Mail</p>
+                <p className="-mb-0.5 text-sm">Mail</p>
                 <input
-                  type='text'
-                  className='input w-64 bg-[#121212] rounded-lg border-2 border-[#BCBCBC]'
-                  placeholder='Mail'
+                  type="text"
+                  className="input w-64 bg-[#121212] rounded-lg border-2 border-[#BCBCBC]"
+                  placeholder="Mail"
                 />
               </div>
               <div>
-                <p className='-mb-0.5 text-sm'>Password</p>
+                <p className="-mb-0.5 text-sm">Password</p>
                 <input
-                  type='password'
-                  className='input w-64 bg-[#121212] rounded-lg border-2 border-[#BCBCBC]'
-                  placeholder='Password'
+                  type="password"
+                  className="input w-64 bg-[#121212] rounded-lg border-2 border-[#BCBCBC]"
+                  placeholder="Password"
                 />
               </div>
               <div>
-                <p className='-mb-0.5 text-sm'>Number</p>
+                <p className="-mb-0.5 text-sm">Number</p>
                 <input
-                  type='text'
-                  className='input w-64 bg-[#121212] rounded-lg border-2 border-[#BCBCBC]'
-                  placeholder='Number'
+                  type="text"
+                  className="input w-64 bg-[#121212] rounded-lg border-2 border-[#BCBCBC]"
+                  placeholder="Number"
                 />
               </div>
-              <div className='w-64 flex justify-end !mt-5'>
+              <div className="w-64 flex justify-end !mt-5">
                 <button
-                  className='custom-btn btn-15 !text-black'
+                  className="custom-btn btn-15 !text-black"
                   onClick={() => setSection(!section)}
                 >
                   Next
@@ -72,42 +72,42 @@ const register = () => {
           ) : (
             <div>
               <div>
-                <p className='-mb-0.5 text-sm'>College</p>
+                <p className="-mb-0.5 text-sm">College</p>
                 <input
-                  type='text'
-                  className='input w-64 bg-[#121212] rounded-lg border-2 border-[#BCBCBC]'
-                  placeholder='College'
+                  type="text"
+                  className="input w-64 bg-[#121212] rounded-lg border-2 border-[#BCBCBC]"
+                  placeholder="College"
                 />
               </div>
-              <div className='flex space-x-2'>
-                <div className='w-1/2'>
-                  <p className='-mb-0.5 text-sm branch' id='branch'>
+              <div className="flex space-x-2">
+                <div className="w-1/2">
+                  <p className="-mb-0.5 text-sm branch" id="branch">
                     Branch
                   </p>
                   <input
-                    type='text'
-                    className='input w-32 bg-[#121212] rounded-lg border-2 border-[#BCBCBC]'
-                    placeholder='Branch'
+                    type="text"
+                    className="input w-32 bg-[#121212] rounded-lg border-2 border-[#BCBCBC]"
+                    placeholder="Branch"
                   />
                 </div>
                 <div>
-                  <p className='-mb-0.5 text-sm'>Year</p>
+                  <p className="-mb-0.5 text-sm">Year</p>
                   <input
-                    type='text'
-                    className='input w-32 bg-[#121212] rounded-lg border-2 border-[#BCBCBC]'
-                    placeholder='Year'
+                    type="text"
+                    className="input w-32 bg-[#121212] rounded-lg border-2 border-[#BCBCBC]"
+                    placeholder="Year"
                   />
                 </div>
               </div>
-              <div className='w-64 flex justify-between !mt-5'>
+              <div className="w-64 flex justify-between !mt-5">
                 <button
-                  className='custom-btn btn-15 !text-black !w-fit'
+                  className="custom-btn btn-15 !text-black !w-fit"
                   onClick={() => setSection(!section)}
                 >
                   Previous
                 </button>
                 <button
-                  className='custom-btn btn-15 !text-black !w-fit'
+                  className="custom-btn btn-15 !text-black !w-fit"
                   onClick={() => setSection(!section)}
                 >
                   Submit
