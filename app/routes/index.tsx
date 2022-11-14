@@ -172,13 +172,13 @@ export default function Index() {
           transition={{ duration: 2 }}
           className="absolute -top-36 left-10"
         >
-          <Player
+          {/* <Player
             autoplay
             loop
             className="rotate-90"
             src="https://assets9.lottiefiles.com/private_files/lf30_nb0dznaf.json"
             style={{ height: "300px", width: "300px" }}
-          ></Player>
+          ></Player> */}
         </motion.div>
         <div className="absolute w-full flex flex-col items-center justify-center top-5 space-y-7">
           <p className="text-6xl">Glimpse of TechFest!</p>
