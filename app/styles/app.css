@@ -1,5 +1,5 @@
 /*
-! tailwindcss v3.2.4 | MIT License | https://tailwindcss.com
+! tailwindcss v3.2.2 | MIT License | https://tailwindcss.com
 */
 
 /*
@@ -582,6 +582,10 @@ video {
   top: 1.25rem;
 }
 
+.\!z-50 {
+  z-index: 50 !important;
+}
+
 .z-10 {
   z-index: 10;
 }
@@ -810,6 +814,10 @@ video {
   --tw-space-x-reverse: 0;
   margin-right: calc(0.5rem * var(--tw-space-x-reverse));
   margin-left: calc(0.5rem * calc(1 - var(--tw-space-x-reverse)));
+}
+
+.overflow-auto {
+  overflow: auto;
 }
 
 .overflow-hidden {
@@ -1066,6 +1074,11 @@ body {
   font-family: "Orbitron", sans-serif;
   overflow-x: hidden;
   /* cursor: none; */
+}
+
+::-webkit-scrollbar {
+  display: none;
+  /* Safari and Chrome */
 }
 
 .group:hover .group-hover\:translate-y-0 {

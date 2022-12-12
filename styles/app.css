@@ -7,3 +7,8 @@ body {
   overflow-x: hidden;
   /* cursor: none; */
 }
+
+::-webkit-scrollbar {
+  display: none;
+    /* Safari and Chrome */
+}
