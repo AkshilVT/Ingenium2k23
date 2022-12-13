@@ -69,7 +69,8 @@ const ParticleBackground = () => {
               type: "circle",
             },
             onHover: {
-              enable: true,
+              // enable: true,
+              enable: false,
               mode: "grab",
               parallax: {
                 enable: false,
