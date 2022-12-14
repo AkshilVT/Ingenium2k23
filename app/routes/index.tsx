@@ -1,6 +1,9 @@
 import { motion } from "framer-motion";
 import React, { Suspense } from "react";
 import ParticleBackground from "../../components/particles/ParticleBackground";
+import { Player } from "@lottiefiles/react-lottie-player";
+import logo from "../../public/logo.json";
+
 // import Loading from './loading';
 const demo = () => {
   return (
@@ -15,9 +18,20 @@ const demo = () => {
         }}
         transition={{ duration: 1, delay: 1 }}
       > */}
-      <img src="Full-Logo.svg" />
-      {/* </motion.div> */}
-      <ParticleBackground />
+      {/* <img src="Full-Logo.svg" /> */}
+      <div className="h-screen w-screen">
+        <Player
+          autoplay
+          // loop
+          keepLastFrame
+          // className="rotate-90"
+          className="block mx-auto my-auto"
+          src={logo}
+          style={{ height: "600px", width: "600px" }}
+        ></Player>
+        {/* </motion.div> */}
+        <ParticleBackground />
+      </div>
     </>
   );
 };
