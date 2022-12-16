@@ -1,7 +1,9 @@
+import { Player } from "@lottiefiles/react-lottie-player";
 import { ActionArgs, redirect } from "@remix-run/node";
 import { Form, useTransition } from "@remix-run/react";
 import RegisterAPI from "components/Airtable/data";
 import ParticleBackground from "components/particles/ParticleBackground";
+import { motion } from "framer-motion";
 import React from "react";
 
 export const action = async ({ request }: ActionArgs) => {
@@ -24,8 +26,28 @@ function Registration() {
   const transition = useTransition();
   const loading = Boolean(transition.submission);
   return (
-    <div className="h-screen text-white">
+    <div className="h-screen text-white overflow-y-hidden">
       <ParticleBackground />
+      <motion.div
+        // initial={{ opacity: 0 }}
+        // animate={{ opacity: 1 }}
+        transition={{ duration: 1, repeat: Infinity, repeatType: "reverse" }}
+      >
+        <Player
+          autoplay
+          loop
+          className="fixed bottom-10 left-20"
+          src="https://assets6.lottiefiles.com/packages/lf20_47hnbnjn.json"
+          // style={{ height: '300px', width: '300px' }}
+        />
+      </motion.div>
+      <Player
+        autoplay
+        loop
+        className="fixed w-[400px] bottom-10 right-20"
+        src="register1.json"
+        // style={{ height: '300px', width: '300px' }}
+      />
       <h1 className="text-6xl flex justify-center my-24">
         Register for Ingenium2k23
       </h1>
