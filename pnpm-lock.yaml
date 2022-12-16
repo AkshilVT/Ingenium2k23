@@ -17,6 +17,7 @@ specifiers:
   cross-env: ^7.0.3
   eslint: ^8.23.1
   framer-motion: ^7.6.6
+  loose-envify: ^1.4.0
   postcss: ^8.4.18
   prettier: 2.7.1
   react: ^18.2.0
@@ -35,6 +36,7 @@ dependencies:
   airtable: 0.11.6
   cross-env: 7.0.3
   framer-motion: 7.6.6_biqbaboplfbrettd7655fr4n2y
+  loose-envify: 1.4.0
   react: 18.2.0
   react-dom: 18.2.0_react@18.2.0
   react-particles: 2.6.0_react@18.2.0
